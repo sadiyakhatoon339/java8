@@ -1,10 +1,10 @@
-interface abc{
+interface Abc{
     int dis(int a,int b);
 }
 
 
 
-public class two {
+public class Two {
 
     //instance method
     int add(int a,int b){
@@ -31,13 +31,13 @@ public class two {
 
     public static void main(String[] args) {
 
-        abc a=new two()::add;
+        Abc a=new Two()::add;
         System.out.println(a.dis(1,3));
 
-        abc a1=new two()::sub;
+        Abc a1=new Two()::sub;
         System.out.println(a1.dis(6,3));
 
-        abc ab=two::mul;
+        Abc ab=Two::mul;
         System.out.println(ab.dis(9,3));
 
 
