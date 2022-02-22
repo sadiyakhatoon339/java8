@@ -1,4 +1,4 @@
-interface Cda{
+interface Checkable{
     int check(int a);
 }
 
@@ -8,7 +8,7 @@ public class Two {
         int k=7;
 
 
-        Cda ob=(int a) -> (a++);
+        Checkable ob=(int a) -> (a++);
 
         int ans=ob.check(k);
 
