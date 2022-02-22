@@ -1,10 +1,10 @@
-interface inter{
+interface Inter{
     default void dis(){
         System.out.println("Multiple Inheritance");
     }
 }
 
-interface c1 extends inter{
+interface C1 extends Inter{
     default void dis(){
         System.out.println("Multiple Inheritance C1");
 
@@ -13,7 +13,7 @@ interface c1 extends inter{
 
 
 
-interface c2 extends inter{
+interface C2 extends Inter{
     default void dis(){
         System.out.println("Multiple Inheritance C2");
 
@@ -21,16 +21,16 @@ interface c2 extends inter{
 }
 
 
-public class multiple_inheritance implements c1,c2{
+public class Multiple_inheritance implements C1,C2{
 
     public void dis() {
-        c1.super.dis();
-        c2.super.dis();
+        C1.super.dis();
+        C2.super.dis();
         System.out.println("Multiple Inheritance Main");
     }
 
     public static void main(String[] args) {
-        new multiple_inheritance().dis();
+        new Multiple_inheritance().dis();
     }
 
 }
