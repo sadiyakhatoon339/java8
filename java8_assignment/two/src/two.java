@@ -1,4 +1,4 @@
-interface Abc{
+interface Runnable{
     int dis(int a,int b);
 }
 
@@ -31,13 +31,13 @@ public class Two {
 
     public static void main(String[] args) {
 
-        Abc a=new Two()::add;
+        Runnable a=new Two()::add;
         System.out.println(a.dis(1,3));
 
-        Abc a1=new Two()::sub;
+        Runnable a1=new Two()::sub;
         System.out.println(a1.dis(6,3));
 
-        Abc ab=Two::mul;
+        Runnable ab=Two::mul;
         System.out.println(ab.dis(9,3));
 
 
