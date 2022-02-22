@@ -1,14 +1,14 @@
-interface cda{
+interface Cda{
     int check(int a);
 }
 
 
-public class two {
+public class Two {
     public static void main(String args[]){
         int k=7;
 
 
-        cda ob=(int a) -> (a++);
+        Cda ob=(int a) -> (a++);
 
         int ans=ob.check(k);
 
