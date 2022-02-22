@@ -1,4 +1,4 @@
-interface Abc{
+interface Runnable{
     boolean check(int a,int b);
 }
 
@@ -8,7 +8,7 @@ public class One {
         int k=9;
         int l=8;
 
-        Abc ob=(int a,int b) -> (a>b);
+        Runnable ob=(int a,int b) -> (a>b);
 
         boolean ans= ob.check(k,l);
 
