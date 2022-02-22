@@ -2,7 +2,7 @@ interface in{
     String met(String s);
 }
 
-class four{
+class Four{
     public static void main(String args[]){
         String r="danger";
         in ob=(String s) ->s.toUpperCase();
